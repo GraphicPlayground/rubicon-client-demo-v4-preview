@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Rubicon Design + Construct</title>
+  <meta name="description" content="Strategy + Design + Construct. We create environments that captivate & inspire." />
+
+  <!-- Tailwind CSS -->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!-- Google Fonts Proxies -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Noto+Serif:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            rubicon: {
+              dark: '#1a1a1a', // Rich Black/Charcoal
+              orange: '#F28626', // Rubicon Orange
+              light: '#f5f5f4', // Stone 100
+              glass: 'rgba(255, 255, 255, 0.85)',
+            }
+          },
+          fontFamily: {
+            serif: ['"Noto Serif"', 'serif'], // Represents Georgia Pro
+            sans: ['"Inter"', 'sans-serif'],   // Represents Helvetica Now
+          },
+          animation: {
+            'fade-in-up': 'fadeInUp 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) forwards',
+            'fade-in-delayed': 'fadeInUp 0.75s cubic-bezier(0.25, 0.46, 0.45, 0.94) 0.2s forwards',
+            'float': 'float 8s ease-in-out infinite',
+            'slide-down': 'slideDown 0.5s ease-out forwards',
+            'scale-reveal': 'scaleReveal 1.8s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'modal-backdrop': 'fadeIn 0.5s ease-out forwards',
+            'modal-panel': 'slideUpFade 0.6s cubic-bezier(0.16, 1, 0.3, 1) forwards',
+            'marquee': 'marquee 40s linear infinite',
+            'pulse-glow': 'pulseGlow 2s ease-in-out infinite',
+          },
+          keyframes: {
+            fadeInUp: {
+              '0%': { opacity: '0', transform: 'translateY(30px)' },
+              '100%': { opacity: '1', transform: 'translateY(0)' },
+            },
+            fadeIn: {
+              '0%': { opacity: '0' },
+              '100%': { opacity: '1' },
+            },
+            slideUpFade: {
+              '0%': { opacity: '0', transform: 'translateY(40px) scale(0.98)' },
+              '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+            },
+            scaleReveal: {
+              '0%': { transform: 'scale(1.1)' },
+              '100%': { transform: 'scale(1)' },
+            },
+            float: {
+              '0%, 100%': { transform: 'translateY(0)' },
+              '50%': { transform: 'translateY(-15px)' },
+            },
+            slideDown: {
+              '0%': { transform: 'translateY(-100%)' },
+              '100%': { transform: 'translateY(0)' },
+            },
+            marquee: {
+              '0%': { transform: 'translateX(0)' },
+              '100%': { transform: 'translateX(-50%)' },
+            },
+            pulseGlow: {
+              '0%, 100%': { boxShadow: '0 0 10px rgba(255, 107, 0, 0.3)' },
+              '50%': { boxShadow: '0 0 15px rgba(255, 107, 0, 0.45)' },
+            }
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+
+    /* Hide scrollbar for clean look */
+    ::-webkit-scrollbar {
+      width: 8px;
+    }
+
+    ::-webkit-scrollbar-track {
+      background: #f1f1f1;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background: #1a1a1a;
+      border-radius: 4px;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background: #F28626;
+    }
+  </style>
+
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.30.0"
+  }
+}
+</script>
+  <script type="module" crossorigin src="/Rubicon-Website-Build/assets/index-Bfbra4bd.js"></script>
+</head>
+
+<body class="bg-white text-rubicon-dark font-sans antialiased selection:bg-rubicon-orange selection:text-white">
+  <div id="root"></div>
+</body>
+
+</html>
